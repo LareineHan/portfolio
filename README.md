@@ -1,12 +1,12 @@
-🛡️ Cybersecurity Portfolio
+## 🛡️ Cybersecurity Portfolio
 
 Lareine Han
 Information Security Student Analyst (ISS/ITS)
 Microsoft Defender | Entra ID | KQL | Phishing & Infrastructure Analysis
 
-⸻
 
-👋 About This Repository
+
+## 👋 About This Repository
 
 This repository contains sanitized cybersecurity case studies and work samples from my experience as an Information Security Student Analyst.
 
@@ -19,9 +19,9 @@ Each case study documents:
 
 All content is anonymized and redacted to protect sensitive internal information.
 
-⸻
 
-📂 Case Studies
+
+## 📂 Case Studies
 
 🔎 1. Japanese Spear Phishing → ASN 29873 Infrastructure Pivot → Account Containment
 	•	Multi-stage redirect with bot-evasion behavior (HTTP 429 response)
@@ -30,9 +30,9 @@ All content is anonymized and redacted to protect sensitive internal information
 	•	Identity correlation and authentication anomaly review
 	•	3 user password resets as protective action
 
-➡️ Read Full Case Study￼
+➡️ [Read Full Case Study](/workspaces/portfolio/case-studies/2026-02-24-aws-ses-mandrill/ISS_CaseStudy_AWS_SES_Mandrill.pdf)
 
-⸻
+
 
 🔎 2. AWS SES + Mandrill Campaign-Level Pivot
 	•	DMARC BestGuessPass via Amazon SES infrastructure
@@ -41,11 +41,11 @@ All content is anonymized and redacted to protect sensitive internal information
 	•	104-message scope validation
 	•	Click telemetry impact assessment
 
-➡️ Read Full Case Study￼
+➡️ [Read Full Case Study](/workspaces/portfolio/case-studies/2026-03-03-asn29873/ISS_CaseStudy_March3_ASN29873.pdf)￼
 
-⸻
 
-🧠 Investigation Themes
+
+## 🧠 Investigation Themes
 
 Across cases, I focus on:
 	•	Infrastructure-level pivots (ASN, hosting clusters)
@@ -55,9 +55,9 @@ Across cases, I focus on:
 	•	Evidence-based escalation vs monitor-only decisions
 	•	KQL-based hunting and validation workflows
 
-⸻
 
-🛠 Technical Focus Areas
+
+## 🛠 Technical Focus Areas
 	•	Microsoft Defender Advanced Hunting
 	•	Entra ID sign-in analysis
 	•	Email authentication (SPF, DKIM, DMARC)
@@ -65,9 +65,9 @@ Across cases, I focus on:
 	•	URL redirect chain analysis
 	•	IOC clustering methodology
 
-⸻
 
-🎯 Investigation Philosophy
+
+## 🎯 Investigation Philosophy
 
 I avoid escalating on a single “weird” indicator.
 I look for layered corroboration across:
@@ -78,9 +78,9 @@ I look for layered corroboration across:
 
 Security decisions should be supported by multiple aligned signals, not intuition alone.
 
-⸻
 
-📌 Sanitization Notice
+
+## 📌 Sanitization Notice
 
 All case studies are redacted and sanitized.
 	•	No internal tenant identifiers
@@ -90,19 +90,21 @@ All case studies are redacted and sanitized.
 
 These write-ups are for educational and portfolio purposes only.
 
-⸻
 
-⚖️ Usage & Rights
+
+## ⚖️ Usage & Rights
 
 All rights reserved.
 
 This content may not be redistributed, modified, or reused without permission.
 
-⸻
 
-📫 Contact
+
+## 📫 Contact
 
 If you would like to discuss any case study or technical approach:
 
-LinkedIn: www.linkedin.com/in/lareinehan/
-GitHub: github.com/LareineHan/portfolio
+
+[LinkedIn](www.linkedin.com/in/lareinehan/)
+| 
+[GitHub](github.com/LareineHan/portfolio)
