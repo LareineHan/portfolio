@@ -30,7 +30,7 @@ All content is anonymized and redacted to protect sensitive internal information
 	•	Identity correlation and authentication anomaly review
 	•	3 user password resets as protective action
 
-➡️ [Read Full Case Study](/workspaces/portfolio/case-studies/2026-02-24-aws-ses-mandrill/ISS_CaseStudy_AWS_SES_Mandrill.pdf)
+➡️ [Read Full Case Study](/workspaces/portfolio/case-studies/2026-02-24-aws-ses-mandrill/README.md)
 
 
 
@@ -41,7 +41,7 @@ All content is anonymized and redacted to protect sensitive internal information
 	•	104-message scope validation
 	•	Click telemetry impact assessment
 
-➡️ [Read Full Case Study](/workspaces/portfolio/case-studies/2026-03-03-asn29873/ISS_CaseStudy_March3_ASN29873.pdf)￼
+➡️ [Read Full Case Study](/workspaces/portfolio/case-studies/2026-03-03-asn29873/README.md)￼
 
 
 
