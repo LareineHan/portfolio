@@ -1,23 +1,29 @@
 ## 🛡️ Cybersecurity Portfolio
 
 Lareine Han
-Information Security Student Analyst (ISS/ITS)
-Microsoft Defender | Entra ID | KQL | Phishing & Infrastructure Analysis
+Security Operations | Phishing Investigation | Detection Tuning | Microsoft Defender | KQL | Infrastructure Analysis
 
 
 
 ## 👋 About This Repository
 
-This repository contains sanitized cybersecurity case studies and work samples from my experience as an Information Security Student Analyst.
+This repository contains sanitized cybersecurity case studies and operational investigations from my work as an Information Security Student Analyst in Security Operations.
 
-Each case study documents:
-	•	Initial detection
-	•	Investigation methodology
-	•	Technical pivots (email, infrastructure, identity)
-	•	Evidence-based escalation decisions
-	•	Lessons learned
+My work focuses on phishing detection, false positive validation, shared infrastructure abuse analysis, and evidence-based remediation decisions using Microsoft Defender, Entra ID, and KQL.
+
+Rather than treating alerts as isolated events, I investigate campaign patterns across sender infrastructure, authentication behavior, URL delivery paths, and identity signals to determine the safest and most effective response.
+
+This includes:
+
+• false positive validation and release decisions
+• quarantine and sender-domain blocking recommendations
+• shared platform abuse investigations (AWS SES, Zoho, Demio, Auvik, Mailgun)
+• vendor escalation when legitimate infrastructure is being abused
+• detection tuning to reduce both missed attacks and false positives
 
 All content is anonymized and redacted to protect sensitive internal information.
+
+⸻
 
 
 
@@ -44,6 +50,19 @@ All content is anonymized and redacted to protect sensitive internal information
 ➡️ [Read Full Case Study](https://github.com/LareineHan/portfolio/blob/main/case-studies/2026-03-03-asn29873/README.md)￼
 
 
+
+🔎 3. Financial Spoofing Campaign → Mailgun Rotation → URL Signature Detection
+	• Expanded from a single MDO cluster (253 emails) into 1,500+ related messages
+	• Identified recurring sender rotation using Mailgun infrastructure and spoofed finance domains
+	• Detected near-100% malicious match using shared URL signature (https://napp.)
+	• Evaluated IP filtering vs sender blocking vs URL-based indicators
+	• Proposed safer mitigation balancing detection strength and false positive risk
+	
+➡️ Read Full Case Study - is coming..
+
+🔎 4. Legitimate Infrastructure Abuse — Auvik / Demio / Zoho
+
+➡️ Read Full Case Study - is coming..
 
 ## 🧠 Investigation Themes
 
