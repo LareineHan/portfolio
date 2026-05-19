@@ -43,7 +43,7 @@ All content is anonymized and redacted to protect sensitive internal information
 - 104-message scope validation
 - Click telemetry impact assessment
 
-➡️ [Read Full Case Study](https://github.com/LareineHan/portfolio/blob/main/case-studies/2026-03-03-asn29873/README.md)
+➡️ [Read Full Case Study](/workspaces/portfolio/case-studies/2026-02-24-aws-ses-mandrill)
 
 
 
@@ -56,7 +56,7 @@ All content is anonymized and redacted to protect sensitive internal information
 - Proposed safer mitigation balancing detection strength and false positive risk
 - Recommended sender/domain blocking based on infrastructure overlap
 
-➡️ Read Full Case Study — coming soon
+➡️ [Read Full Case Study](/workspaces/portfolio/case-studies/2026-05-08-financial-spoofing)
 
 
 
@@ -69,7 +69,7 @@ All content is anonymized and redacted to protect sensitive internal information
 - Correlated behavioral indicators across sandbox telemetry and network artifacts
 - Distinguished between compromised legitimate infrastructure vs fully malicious hosting
 
-➡️ Read Full Case Study — coming soon
+➡️ [Read Full Case Study](/workspaces/portfolio/case-studies/2026-05-18-wordguru-compromised)
 
 
 
@@ -92,7 +92,7 @@ All content is anonymized and redacted to protect sensitive internal information
 - Analyzed sender rotation and infrastructure reuse patterns
 - Identified detection gaps caused by trusted SaaS infrastructure
 
-➡️ Read Full Case Study — coming soon
+➡️ [Read Full Case Study](/workspaces/portfolio/case-studies/2026-05-11-legit-infra-abused)
 
 
 
@@ -108,7 +108,7 @@ Examples include:
 
 This work focuses on balancing security enforcement with operational continuity and reducing alert fatigue caused by overly aggressive detections.
 
-➡️ Read Full Case Study — coming soon
+➡️ [Read Full Case Study](/workspaces/portfolio/case-studies/2026-spring-detection-tuning)
 
 
 
