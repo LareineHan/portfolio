@@ -1,7 +1,7 @@
 ## 🛡️ Cybersecurity Portfolio
 
 Lareine Han  
-Security Operations | Email Security | Phishing Investigation | Detection Tuning | Microsoft Defender XDR | KQL | Infrastructure Abuse Analysis
+Security Operations | Phishing Infrastructure Analysis | Redirect & Evasion Investigation | False Positive Validation
 
 
 
@@ -9,13 +9,11 @@ Security Operations | Email Security | Phishing Investigation | Detection Tuning
 
 # 👋 About This Repository
 
-This repository contains sanitized cybersecurity case studies and operational investigations from my work as an Information Security Student Analyst in Security Operations.
+This repository contains sanitized cybersecurity investigations and operational case studies from my work in Security Operations.
 
-My work focuses on phishing detection, false positive validation, shared infrastructure abuse analysis, and evidence-based remediation decisions using Microsoft Defender XDR, Entra ID, KQL, and sandbox-based investigation workflows.
+My work focuses heavily on phishing infrastructure analysis, redirect-chain investigation, false positive validation, and detection tuning using Microsoft Defender XDR, KQL, Entra ID telemetry, and sandbox-based behavioral analysis.
 
-Rather than treating alerts as isolated events, I investigate campaign patterns across sender infrastructure, authentication behavior, URL delivery paths, and identity signals to determine the safest and most effective response.
-
-My investigations often involve distinguishing truly malicious activity from legitimate platform behavior, reducing false positives while still maintaining strong security controls.
+Many investigations involve distinguishing malicious infrastructure abuse from legitimate SaaS or marketing behavior, especially in cases where attackers hide behind layered redirects, shared cloud infrastructure, or trusted platforms.
 
 This includes:
 
@@ -35,7 +33,23 @@ All content is anonymized and redacted to protect sensitive internal information
 
 # 📂 Case Studies
 
-## 🔎 1. AWS SES + Mandrill Campaign-Level Pivot
+
+## 🔎 1. Redirect-Based Crypto Impersonation Campaign Analysis
+- Investigated a GRASS token impersonation/scam campaign using layered redirect infrastructure
+- Identified ClickFunnels + SendGrid tracking abuse with rotating `.za.com` downstream domains
+- Discovered conditional redirect behavior depending on whether links were opened directly from the rendered email flow
+- Compared rendered Google Workspace email behavior against Microsoft Defender URL observations
+- Used sandbox browser + DevTools Network tracing to reconstruct redirect chains
+- Observed inactive/404 fallback behavior during manual analysis attempts
+- Identified infrastructure patterns suggesting anti-analysis / scanner-evasion logic
+- Distinguished malicious impersonation behavior from legitimate GRASS notification infrastructure
+- Created KQL hunts using redirect infrastructure indicators and tracking identifiers
+- Correlated sender rotation and infrastructure reuse across related campaigns
+- Demonstrated behavioral phishing analysis beyond static IOC or URL reputation checks
+- 
+➡️ [Read Full Case Study](https://github.com/LareineHan/portfolio/tree/main/case-studies/2026-05-26-crypto-redirect-nalysis)
+
+## 🔎 2. AWS SES + Mandrill Campaign-Level Pivot
 
 - DMARC BestGuessPass via Amazon SES infrastructure
 - Tracking-ID pivot for campaign scoping
@@ -47,7 +61,7 @@ All content is anonymized and redacted to protect sensitive internal information
 
 
 
-## 🔎 2. Financial Spoofing Campaign → Mailgun Rotation → URL Signature Detection
+## 🔎 3. Financial Spoofing Campaign → Mailgun Rotation → URL Signature Detection
 
 - Expanded from a single MDO cluster (253 emails) into 1,500+ related messages
 - Identified recurring sender rotation using Mailgun infrastructure and spoofed finance domains
@@ -60,7 +74,7 @@ All content is anonymized and redacted to protect sensitive internal information
 
 
 
-## 🔎 3. Fake Verification Scam → Sandbox Evasion → Compromised Website Investigation
+## 🔎 4. Fake Verification Scam → Sandbox Evasion → Compromised Website Investigation
 
 - Investigated malicious “Verify you are human” social engineering workflow
 - Identified sandbox-aware evasion behavior
@@ -73,7 +87,7 @@ All content is anonymized and redacted to protect sensitive internal information
 
 
 
-## 🔎 4. Japanese Spear Phishing → ASN 29873 Infrastructure Pivot → Account Containment
+## 🔎 5. Japanese Spear Phishing → ASN 29873 Infrastructure Pivot → Account Containment
 
 - Multi-stage redirect with bot-evasion behavior (HTTP 429 response)
 - Infrastructure clustering within ASN 29873
@@ -85,7 +99,7 @@ All content is anonymized and redacted to protect sensitive internal information
 
 
 
-## 🔎 5. Legitimate Infrastructure Abuse — Auvik / Demio / Zoho
+## 🔎 6. Legitimate Infrastructure Abuse — Auvik / Demio / Zoho
 
 - Investigated legitimate SaaS infrastructure abused for phishing delivery
 - Distinguished malicious campaigns from valid webinar and IT automation traffic
@@ -96,7 +110,7 @@ All content is anonymized and redacted to protect sensitive internal information
 
 
 
-## 🔎 6. False Positive Validation & Detection Tuning
+## 🔎 7. False Positive Validation & Detection Tuning
 
 Examples include:
 
@@ -146,7 +160,10 @@ Across cases, I focus on:
 - KQL-based hunting and validation workflows
 - behavioral analysis using sandbox environments
 - distinguishing compromised infrastructure from intentionally malicious infrastructure
-
+- redirect-chain reconstruction
+- layered tracking infrastructure analysis
+- behavioral discrepancies between rendered email flow and security tooling
+- conditional redirect / anti-analysis behavior
 
 
 ---
@@ -185,7 +202,7 @@ Security decisions should be supported by multiple aligned signals, not intuitio
 
 Good security operations require not only detecting malicious activity, but also correctly identifying legitimate activity that should not be disrupted.
 
-
+Modern phishing analysis often requires understanding behavior and infrastructure relationships — not simply identifying a single malicious URL.
 
 ---
 
