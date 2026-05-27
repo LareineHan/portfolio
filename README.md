@@ -46,7 +46,7 @@ All content is anonymized and redacted to protect sensitive internal information
 - Created KQL hunts using redirect infrastructure indicators and tracking identifiers
 - Correlated sender rotation and infrastructure reuse across related campaigns
 - Demonstrated behavioral phishing analysis beyond static IOC or URL reputation checks
-- 
+
 ➡️ [Read Full Case Study](https://github.com/LareineHan/portfolio/tree/main/case-studies/2026-05-26-crypto-redirect-nalysis)
 
 ## 🔎 2. AWS SES + Mandrill Campaign-Level Pivot
