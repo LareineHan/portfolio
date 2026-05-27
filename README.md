@@ -235,6 +235,5 @@ This content may not be redistributed, modified, or reused without permission.
 
 If you would like to discuss any case study or technical approach:
 
-[LinkedIn](www.linkedin.com/in/lareinehan/)  
-|  
+[LinkedIn](www.linkedin.com/in/lareinehan/)   
 [GitHub](github.com/LareineHan/portfolio)
